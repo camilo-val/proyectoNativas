@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="marginForm">
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:layout_marginHorizontal">10sp</item>
+    </style>
+</resources>

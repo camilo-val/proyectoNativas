@@ -7,4 +7,169 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/icon_barber"
+        android:layout_width="147dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toTopOf="@+id/input_registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle"
+        app:srcCompat="@mipmap/icon_barber_round" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="263dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="BaberTime"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/icon_barber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/input_registro"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="15dp"
+        android:text="Registro"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_barber" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="49dp"
+        android:orientation="vertical"
+        android:background="@drawable/style_border_form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_registro">
+
+        <TextView
+            android:id="@+id/label_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            style="@style/marginForm"/>
+
+        <EditText
+            android:id="@+id/input_nombre"
+            style="@style/marginForm"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/style_border_form"
+            android:ellipsize="middle"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            style="@style/marginForm"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/style_border_form"
+            style="@style/marginForm"/>
+
+        <TextView
+            android:id="@+id/label_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            style="@style/marginForm"/>
+
+        <EditText
+            android:id="@+id/input_clave"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:hint="Contraseña"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/style_border_form"
+            style="@style/marginForm"/>
+
+        <TextView
+            android:id="@+id/label_confirmar_clave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar contraseña"
+            style="@style/marginForm"/>
+
+        <EditText
+            android:id="@+id/input_confirmar_clave"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Confirmar contraseña"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/style_border_form"
+            style="@style/marginForm"/>
+
+        <TextView
+            android:id="@+id/label_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de nacimiento"
+            style="@style/marginForm"/>
+
+        <EditText
+            android:id="@+id/input_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_centerInParent="true"
+            android:ellipsize="middle"
+            android:hint="YYYY/MM/DD"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/style_border_form"
+            style="@style/marginForm"/>
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="Registrarse"
+            android:backgroundTint="@color/black"
+            style="@style/marginForm"
+            android:layout_marginBottom="10sp"
+            />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
