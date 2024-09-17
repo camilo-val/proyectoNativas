@@ -13,7 +13,13 @@
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
         <activity
+            android:name=".ForwadPassword"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterForm"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
