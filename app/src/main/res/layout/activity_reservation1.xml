@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reservationActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="412dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif"
+            android:text=" Barber Time"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@mipmap/icon_barber" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@mipmap/icon_user" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="340dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="29dp"
+        android:orientation="vertical"
+        android:background="@drawable/style_border_form"
+        app:layout_constraintBottom_toTopOf="@+id/container2"
+        app:layout_constraintEnd_toEndOf="@+id/container2"
+        app:layout_constraintStart_toStartOf="@+id/container1"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="317dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_reservation" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+           android:textAlignment="center"
+            android:text="En este modulo podrás agendar y cancelar tus serfvicios adquiridos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="160dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="21dp"
+        android:orientation="vertical"
+        android:background="@drawable/style_border_form"
+        app:layout_constraintBottom_toBottomOf="@+id/container2"
+        app:layout_constraintEnd_toStartOf="@+id/container2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/container2"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="141dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_ubicacion" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="141dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Localiza la barberia más cercana"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="160dp"
+        android:layout_height="248dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="92dp"
+        android:orientation="vertical"
+        android:background="@drawable/style_border_form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/container1"
+        app:layout_constraintTop_toBottomOf="@+id/container"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="141dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_stairs" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="141dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Calificación de los servicios de las barberias"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
