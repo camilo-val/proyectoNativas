@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Proyecto"
         tools:targetApi="31">
         <activity
+            android:name=".reservationBarbero"
+            android:exported="false"
+            android:theme="@style/Theme.Proyecto" />
+        <activity
+            android:name=".reservationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForwadPassword"
             android:exported="false" />
         <activity
